@@ -8,6 +8,7 @@
 #ifndef PIECE_H_
 #define PIECE_H_
 
+#include <iostream>
 #include <vector>
 #include <algorithm>
 

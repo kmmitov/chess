@@ -10,14 +10,14 @@
 
 #include "Piece.h"
 
-class Pawn: Piece {
+class Pawn: public Piece {
 public:
 	Pawn(int x, int y, bool w){
 		create(x,y,w);
 	}
 	~Pawn();
 };
-class Knight: Piece {
+class Knight: public Piece {
 public:
 	Knight(int x, int y, bool w){
 		create(x,y,w);
@@ -25,7 +25,7 @@ public:
 	~Knight();
 };
 
-class Bishop: Piece {
+class Bishop: public Piece {
 public:
 	Bishop(int x, int y, bool w){
 		create(x,y,w);
@@ -33,7 +33,7 @@ public:
 	~Bishop();
 };
 
-class Rook: Piece {
+class Rook: public Piece {
 public:
 	Rook(int x, int y, bool w){
 		create(x,y,w);
@@ -41,7 +41,7 @@ public:
 	~Rook();
 };
 
-class Queen: Piece {
+class Queen: public Piece {
 public:
 	Queen(int x, int y, bool w){
 		create(x,y,w);
@@ -49,7 +49,7 @@ public:
 	~Queen();
 };
 
-class King: Piece {
+class King: public Piece {
 public:
 	King(int x, int y, bool w){
 		create(x,y,w);

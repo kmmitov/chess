@@ -9,6 +9,8 @@
 #include <iostream>
 using namespace std;
 
+#include "Game.h"
+
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	return 0;
