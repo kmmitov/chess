@@ -7,7 +7,6 @@
 //============================================================================
 
 #include <iostream>
-#define NULL 0
 using namespace std;
 
 int main() {
