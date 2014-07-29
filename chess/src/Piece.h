@@ -14,7 +14,7 @@
 
 using namespace std;
 
-#define Pos pair<int,int>
+typedef pair<int,int> Pos;
 
 class IObserver {
 
