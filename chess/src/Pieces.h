@@ -11,66 +11,48 @@
 #include "Piece.h"
 
 class Pawn: Piece {
-	Pos pos;
-	bool white;
 public:
-	Pawn(int x, int y, bool w):
-		white(w) {
-		pos=make_pair(x,y);
+	Pawn(int x, int y, bool w){
+		create(x,y,w);
 	}
 	~Pawn();
 };
 class Knight: Piece {
-	Pos pos;
-	bool white;
 public:
-	Knight(int x, int y, bool w):
-		white(w) {
-		pos=make_pair(x,y);
+	Knight(int x, int y, bool w){
+		create(x,y,w);
 	}
 	~Knight();
 };
 
 class Bishop: Piece {
-	Pos pos;
-	bool white;
 public:
-	Bishop(int x, int y, bool w):
-		white(w) {
-		pos=make_pair(x,y);
+	Bishop(int x, int y, bool w){
+		create(x,y,w);
 	}
 	~Bishop();
 };
 
 class Rook: Piece {
-	Pos pos;
-	bool white;
 public:
-	Rook(int x, int y, bool w):
-		white(w) {
-		pos=make_pair(x,y);
+	Rook(int x, int y, bool w){
+		create(x,y,w);
 	}
 	~Rook();
 };
 
 class Queen: Piece {
-	Pos pos;
-	bool white;
 public:
-	Queen(int x, int y, bool w):
-		white(w) {
-		pos=make_pair(x,y);
+	Queen(int x, int y, bool w){
+		create(x,y,w);
 	}
 	~Queen();
 };
 
 class King: Piece {
-	Pos pos;
-	bool white;
 public:
-	King(int x, int y, bool w):
-		white(w) {
-		pos=make_pair(x,y);
+	King(int x, int y, bool w){
+		create(x,y,w);
 	}
 	~King();
 };
