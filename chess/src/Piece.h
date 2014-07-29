@@ -23,11 +23,12 @@ class IObserver {
 class Piece{
 	Pos pos;
 	bool white;
-public:
+protected:
 	void create(int x, int y, bool w){
 		pos=make_pair(x,y);
 		white=w;
 	}
+public:
 	virtual ~Piece(){};
 
 };
