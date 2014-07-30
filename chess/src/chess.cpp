@@ -7,12 +7,26 @@
 //============================================================================
 
 #include <iostream>
+#include <iterator>
 using namespace std;
 
 #include "Game.h"
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	Game game;
+	/*
+	std::list<int> intList;
+	for (int i = 0; i < 10; ++i) {
+	    intList.push_back( 1 << i );
+	}
+	*/
+	list<Pos> intList= King(0,0,1).availablePositions();
+
+	std::list<Pos>::const_iterator iterator;
+	for (iterator = intList.begin(); iterator != intList.end(); ++iterator) {
+	    std::cout << iterator->first<<' '<<iterator->second<<endl;
+	}
+	cout<<"alive";
 
 	return 0;
 }

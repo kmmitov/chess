@@ -15,14 +15,16 @@ public:
 	Pawn(int x, int y, bool w){
 		create(x,y,w);
 	}
-	~Pawn();
+	list<Pos> availablePositions();
+	//~Pawn();
 };
 class Knight: public Piece {
 public:
 	Knight(int x, int y, bool w){
 		create(x,y,w);
 	}
-	~Knight();
+	list<Pos> availablePositions();
+	//~Knight();
 };
 
 class Bishop: public Piece {
@@ -30,7 +32,8 @@ public:
 	Bishop(int x, int y, bool w){
 		create(x,y,w);
 	}
-	~Bishop();
+	list<Pos> availablePositions();
+	//~Bishop();
 };
 
 class Rook: public Piece {
@@ -38,7 +41,8 @@ public:
 	Rook(int x, int y, bool w){
 		create(x,y,w);
 	}
-	~Rook();
+	list<Pos> availablePositions();
+	//~Rook();
 };
 
 class Queen: public Piece {
@@ -46,14 +50,17 @@ public:
 	Queen(int x, int y, bool w){
 		create(x,y,w);
 	}
-	~Queen();
+	list<Pos> availablePositions();
+	//~Queen();
 };
 
 class King: public Piece {
+	//bool moved;
 public:
 	King(int x, int y, bool w){
 		create(x,y,w);
 	}
-	~King();
+	list<Pos> availablePositions();
+	//~King();
 };
 #endif /* PAWN_H_ */

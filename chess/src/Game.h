@@ -16,6 +16,8 @@ private:
 
 public:
 	Game();
+	~Game();
+
 
 };
 #endif /* GAME_H_ */
