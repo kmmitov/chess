@@ -17,16 +17,25 @@ using namespace std;
 
 typedef pair<int,int> Pos;
 
-class IObserver {
+class IObserver;
 
+class IObservable {
+protected:
+	IObserver* observer;
+public:
+	IObservable(IObserver* _observer = NULL)
+		: observer(_observer)
+	{
+	}
 };
 
-class Piece{
+class Piece : IObservable {
 protected:
 	Pos pos;
 	bool white;
 
-	void create(int x, int y, bool w){
+	void create(int x, int y, bool w, IObserver* obs = NULL){
+		observer = obs;
 		pos=make_pair(x,y);
 		white=w;
 	}
