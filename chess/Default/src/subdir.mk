@@ -5,17 +5,17 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/Game.cpp \
-../src/Pieces.cpp \
+../src/availablePositions.cpp \
 ../src/chess.cpp 
 
 OBJS += \
 ./src/Game.o \
-./src/Pieces.o \
+./src/availablePositions.o \
 ./src/chess.o 
 
 CPP_DEPS += \
 ./src/Game.d \
-./src/Pieces.d \
+./src/availablePositions.d \
 ./src/chess.d 
 
 

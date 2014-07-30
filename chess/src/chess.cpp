@@ -20,13 +20,13 @@ int main() {
 	    intList.push_back( 1 << i );
 	}
 	*/
-	list<Pos> intList= King(0,0,1).availablePositions();
+	list<Pos> intList= Pawn(6,2,1).availablePositions();
 
 	std::list<Pos>::const_iterator iterator;
 	for (iterator = intList.begin(); iterator != intList.end(); ++iterator) {
 	    std::cout << iterator->first<<' '<<iterator->second<<endl;
 	}
-	cout<<"alive";
+	//cout<<"alive";
 
 	return 0;
 }
